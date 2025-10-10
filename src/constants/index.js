@@ -31,7 +31,7 @@ export const PROJECTS = [
     description:
       "Founded and developed a voice AI receptionist SaaS platform using Vapi API to automate client communication workflows for small businesses. Designed and implemented secure RESTful APIs with JWT authentication, integrating Vapi.ai and Supabase to handle 500+ daily requests with 99.9% uptime, enabling real-time analytics and scalable session management. Built a CI/CD pipeline using GitHub Actions, reducing deployment time by 70% and delivering weekly automated releases with zero downtime.",
     technologies: ["Vapi API", "TypeScript", "Supabase", "AWS", "React", "Next.js"],
-    githubUrl: "https://github.com/elev8",
+    githubUrl: "https://github.com/kevindinh24/elev8",
     liveUrl: "https://www.elev8ai.dev/",
   },
   {

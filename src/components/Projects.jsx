@@ -30,8 +30,8 @@ const Projects = () => {
                     >
                         {project.isVideo ? (
                             project.title === "WellMate" ? (
-                                <div className="mb-6 ml-12">
-                                    <div className="relative transform scale-150" style={{ width: '140px', height: '280px' }}>
+                                <div className="mb-6 ml-0 lg:ml-12">
+                                    <div className="relative transform scale-100 lg:scale-150" style={{ width: '140px', height: '280px' }}>
                                         {/* iPhone Frame */}
                                         <div className="absolute inset-0 bg-black rounded-[25px] p-2 shadow-2xl">
                                             <div className="w-full h-full bg-black rounded-[20px] overflow-hidden relative">
