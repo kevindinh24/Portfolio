@@ -2,6 +2,7 @@ import project1 from "../assets/projects/ASLearn-Preview.png";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/WellMate-Demo.mov";
 import project4 from "../assets/projects/MailSafe-Demo.mov";
+import project5 from "../assets/projects/elev8-demo.mov";
 
 export const HERO_CONTENT = 'I am a Computer Science student at Drexel University, with concentrations in AI and Software Engineering. I enjoy building full-stack applications and machine learning projects using Python, Java, React, and AI frameworks, bringing ideas to life to solve real-world problems.';
 
@@ -24,7 +25,17 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "ASLearn Hackathon Project",
+    title: "elev8",
+    image: project5,
+    isVideo: true,
+    description:
+      "Founded and developed a voice AI receptionist SaaS platform using Vapi API to automate client communication workflows for small businesses. Designed and implemented secure RESTful APIs with JWT authentication, integrating Vapi.ai and Supabase to handle 500+ daily requests with 99.9% uptime, enabling real-time analytics and scalable session management. Built a CI/CD pipeline using GitHub Actions, reducing deployment time by 70% and delivering weekly automated releases with zero downtime.",
+    technologies: ["Vapi API", "TypeScript", "Supabase", "AWS", "React", "Next.js"],
+    githubUrl: "https://github.com/elev8",
+    liveUrl: "https://www.elev8ai.dev/",
+  },
+  {
+    title: "ASLearn - Philly Codefest 2025",
     image: project1,
     description:
       "Led a 4-member team to build an AI-powered web platform for American Sign Language (ASL) gesture recognition. Developed and trained an AI model using OpenCV and YOLOvX, with automated dataset collection using Jupyter Notebook scripts.",

@@ -1,6 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -104,19 +104,34 @@ const Projects = () => {
                     >
                         <div className="flex items-center justify-between mb-2">
                             <h3 className="font-semibold text-2xl">{project.title}</h3>
-                            {project.githubUrl && (
-                                <motion.a
-                                    href={project.githubUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-stone-400 hover:text-white transition-colors duration-300"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    aria-label={`View ${project.title} on GitHub`}
-                                >
-                                    <FaGithub className="text-2xl" />
-                                </motion.a>
-                            )}
+                            <div className="flex items-center space-x-3">
+                                {project.liveUrl && (
+                                    <motion.a
+                                        href={project.liveUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-stone-400 hover:text-white transition-colors duration-300"
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        aria-label={`View live demo of ${project.title}`}
+                                    >
+                                        <FaExternalLinkAlt className="text-xl" />
+                                    </motion.a>
+                                )}
+                                {project.githubUrl && (
+                                    <motion.a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-stone-400 hover:text-white transition-colors duration-300"
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        aria-label={`View ${project.title} on GitHub`}
+                                    >
+                                        <FaGithub className="text-2xl" />
+                                    </motion.a>
+                                )}
+                            </div>
                         </div>
                         <p className="mb-4 text-stone-400">{project.description}</p>
                         <motion.div 
